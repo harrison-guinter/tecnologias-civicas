@@ -9,19 +9,14 @@ import {
 const fs = require("fs");
 
 function csvToArray(strFile: string): DefaultDataSet[] {
-  let headers: string[] = separateHeaders(strFile);
-  headers = mapHeaders(headers);
+  const headers: string[] = mapHeaders(separateHeaders(strFile));
   const rows = createRowEachLineBreak(strFile);
-  let arr: any[] = formatRows(rows, headers);
+  const arr: any[] = formatRows(rows, headers);
 
-  return arr.map((element) => {
-    element = new DefaultDataSet(element);
-
-    return element;
-  });
+  return arr.map((element): DefaultDataSet => new DefaultDataSet(element));
 }
 
-export const returnCSVFileAsArray = async (path: string) => {
+export const getCSVFileAsArray = async (path: string) => {
   return csvToArray(fs.readFileSync(path, "UTF-8"));
 };
 

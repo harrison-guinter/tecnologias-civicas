@@ -33,6 +33,10 @@ export const formatRows = (rows: string[], headers: string[]): Object[] => {
         }
       }
 
+      //removing floating point ambiguity
+      if (!isNaN(object[header]))
+        object[header] = Number(String(object[header]).replaceAll(".", ""));
+
       return object;
     }, {});
 

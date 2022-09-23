@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+/* defining variables */
+:root {
+    --primary-gray: #2f4f4f;
+    --secondary-gray: rgb(130, 130, 130);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, h3, h4 { margin: 0; }
+
+.page-topic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.chart {
+    height: 40vh;
+    width: 40vw;
+    padding: 0.5em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.chart-article {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify
+}
+  
+.chart-group-title, .chart-article-title{
+    margin-bottom: 0.5em;
+    color: var(--primary-gray);
+    font-weight: normal;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.chart-article-punchline {
+    margin: 0.5em 0 0.5em 0 ;
+    color: var(--primary-gray);
+    font-weight: normal;
+    text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chart-article-paragraph {
+    margin: 0;
+    color: var(--secondary-gray);
+    text-indent: 1.5em; 
+}
+
+.chart-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }

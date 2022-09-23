@@ -12,7 +12,7 @@ export const mergeObjectsToKeyValueArray = (objectArr) => {
   const secondObject = objectArr[1];
   const arr = [];
 
-  Object.keys(objectArr[0]).forEach((key) => {
+  Object.keys(firstObject).forEach((key) => {
     arr.push([key, firstObject[key], secondObject[key]]);
   });
 
