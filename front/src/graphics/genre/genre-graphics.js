@@ -38,16 +38,43 @@ function GenreGraphics() {
 
   return (
     <Fragment>
-      <section className={"chart-group"}>
-        <h2 className={"chart-group-title"}>Relatório de Gênero</h2>
-        <figure className={"chart-list"}>
-          {enteringStudentsByGenreFeliz.map((element) => {
-            const displayableColumns = element.filter((item) =>
-              item && !isNaN(item[0]) ? true : false
-            );
+      <div className={"page-topic"}>
+        <section className={"chart-group"}>
+          <h2 className={"title"}>Relatório de Gênero</h2>
+          <figure className={"chart-list"}>
+            {enteringStudentsByGenreFeliz.map((element) => {
+              const displayableColumns = element.filter((item) =>
+                item && !isNaN(item[0]) ? true : false
+              );
 
-            return (
-              <Fragment>
+              return (
+                <Fragment>
+                  <Chart
+                    key={1}
+                    chartType="Line"
+                    data={[
+                      ["Ano", "Masculino", "Feminino"],
+                      ...displayableColumns,
+                    ]}
+                    className={"chart"}
+                    options={{
+                      chart: {
+                        title: `Alunos ingressantes de cursos superiores na cidade de Feliz`,
+                        subtitle:
+                          "Nota-se a clara paridade de gênero nos ingressos no IFRS Campus Feliz ao longo do tempo.",
+                      },
+                    }}
+                  />
+                </Fragment>
+              );
+            })}
+
+            {graduatingStudentsByGenreFeliz.map((element) => {
+              const displayableColumns = element.filter((item) =>
+                item && !isNaN(item[0]) ? true : false
+              );
+
+              return (
                 <Chart
                   key={1}
                   chartType="Line"
@@ -58,47 +85,30 @@ function GenreGraphics() {
                   className={"chart"}
                   options={{
                     chart: {
-                      title: `Alunos ingressantes de cursos superiores na cidade de Feliz`,
+                      title: `Alunos concluintes de cursos superiores na cidade de Feliz`,
                       subtitle:
-                        "Nota-se a clara paridade de gênero nos ingressos no IFRS Campus Feliz ao longo do tempo.",
+                        "É perceptível uma predominância feminina entre os concluintes, especialmente no ano de 2018.",
                     },
                   }}
                 />
-              </Fragment>
-            );
-          })}
-
-          {graduatingStudentsByGenreFeliz.map((element) => {
-            const displayableColumns = element.filter((item) =>
-              item && !isNaN(item[0]) ? true : false
-            );
-
-            return (
-              <Chart
-                key={1}
-                chartType="Line"
-                data={[["Ano", "Masculino", "Feminino"], ...displayableColumns]}
-                className={"chart"}
-                options={{
-                  chart: {
-                    title: `Alunos concluintes de cursos superiores na cidade de Feliz`,
-                    subtitle:
-                      "É perceptível uma predominância feminina entre os concluintes, especialmente no ano de 2018.",
-                  },
-                }}
-              />
-            );
-          })}
-        </figure>
-      </section>
-      <article>
-        <h3 className={"chart-article-title"}>
-          O que causa a maior evasão dentre o grupo masculino?
-        </h3>
-        <p className={"chart-article-paragraph"}>
-          Dentre os principais fatores...
-        </p>
-      </article>
+              );
+            })}
+          </figure>
+        </section>
+        <article className={"chart-article"}>
+          <h3 className={"chart-article-title"}>
+            O que causa a maior evasão dentre o grupo masculino?
+          </h3>
+          <p className={"chart-article-paragraph"}>
+            Atualmente, as mulheres se tornaram maioria nas universidades
+            brasileiras, diferentemente do padrão demonstrado nos gráficos
+            acima, este fenômeno é explicado por diversos fatores, dentre eles,
+            a necessidade de ingressar no mercado de trabalho de forma precoce,
+            a fim de contribuir na renda familiar.
+          </p>
+          <p className={"chart-article-paragraph"}></p>
+        </article>
+      </div>
     </Fragment>
   );
 }

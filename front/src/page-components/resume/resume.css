@@ -1,0 +1,10 @@
+.resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: justify;
+}
+
+.resume-paragraph {
+    width: 80%;
+}

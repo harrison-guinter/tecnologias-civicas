@@ -35,7 +35,7 @@ function StudentsGraphics() {
     <Fragment>
       <div className={"page-topic"}>
         <section className={"chart-group"}>
-          <h2 className={"chart-group-title"}>
+          <h2 className={"title"}>
             Adesão ao ensino superior no IFRS Campus Feliz
           </h2>
           <figure className={"chart-list"}>

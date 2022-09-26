@@ -27,7 +27,7 @@ body, h3, h4 { margin: 0; }
     text-align: justify
 }
   
-.chart-group-title, .chart-article-title{
+.title, .chart-article-title{
     margin-bottom: 0.5em;
     color: var(--primary-gray);
     font-weight: normal;

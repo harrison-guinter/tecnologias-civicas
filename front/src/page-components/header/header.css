@@ -5,9 +5,10 @@ header {
 }
 
 h1 {
+    font-size: 34px;
     width: 80vw;
     text-align: center;
-    padding-top: 1em;
+    padding-top: 0.5em;
 }
 
 .logo {
