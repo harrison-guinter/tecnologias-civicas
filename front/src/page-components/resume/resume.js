@@ -5,44 +5,33 @@ import "./resume.css";
 function Resume() {
   return (
     <Fragment>
-      <section className={"resume"}>
-        <p className={"chart-article-paragraph resume-paragraph"}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem nulla
-          pharetra diam sit. Senectus et netus et malesuada fames ac turpis
-          egestas. Pretium fusce id velit ut tortor pretium viverra. Non nisi
-          est sit amet facilisis magna etiam tempor. Lorem dolor sed viverra
-          ipsum nunc. Sit amet justo donec enim diam vulputate ut. Purus viverra
-          accumsan in nisl nisi. Gravida dictum fusce ut placerat orci nulla
-          pellentesque. Ullamcorper sit amet risus nullam eget felis eget nunc.
-          Faucibus in ornare quam viverra orci sagittis eu. Donec adipiscing
-          tristique risus nec feugiat in fermentum. Fermentum iaculis eu non
-          diam phasellus. Cras adipiscing enim eu turpis egestas pretium. Nunc
-          id cursus metus aliquam eleifend mi in nulla posuere. Sollicitudin
-          aliquam ultrices sagittis orci a scelerisque purus. Tortor at risus
-          viverra adipiscing at in. Quam id leo in vitae turpis massa sed.
-          Blandit massa enim nec dui nunc mattis enim. Suspendisse faucibus
-          interdum posuere lorem ipsum dolor sit amet consectetur. Felis eget
-          nunc lobortis mattis. Tristique senectus et netus et. Iaculis at erat
-          pellentesque adipiscing. Sed vulputate mi sit amet. Lectus magna
-          fringilla urna porttitor rhoncus dolor purus non. Purus sit amet
-          luctus venenatis lectus magna fringilla urna porttitor. Eget mi proin
-          sed libero enim sed faucibus turpis in. Diam quis enim lobortis
-          scelerisque. Ut porttitor leo a diam sollicitudin tempor. Tellus id
-          interdum velit laoreet id. Magna fermentum iaculis eu non diam
-          phasellus. At elementum eu facilisis sed odio morbi. Et odio
-          pellentesque diam volutpat commodo sed. Et sollicitudin ac orci
-          phasellus egestas tellus rutrum tellus. Sit amet nisl suscipit
-          adipiscing bibendum est. Sit amet consectetur adipiscing elit duis
-          tristique sollicitudin. Convallis a cras semper auctor neque. Sed id
-          semper risus in. Mauris augue neque gravida in fermentum et
-          sollicitudin. Id eu nisl nunc mi ipsum faucibus vitae aliquet nec.
-          Pulvinar etiam non quam lacus suspendisse faucibus interdum. Mattis
-          molestie a iaculis at erat pellentesque adipiscing commodo. Auctor
-          urna nunc id cursus metus aliquam eleifend mi. Fermentum odio eu
-          feugiat pretium nibh ipsum.
-        </p>
-      </section>
+      <div className={"page-topic"}>
+        <section className={"resume"}>
+          <p className={"chart-article-paragraph "}>
+            Projeto desenvolvido com intuito de esclarecer a queda da taxa de
+            adesão de estudantes em cursos superiores, juntamente com o aumento
+            do número de desistências nesses cursos, além de evidenciar a
+            desigualdade de gênero presente no ensino superior da cidade de
+            Feliz.
+          </p>
+          <p className={"chart-article-paragraph "}>
+            A fim democratizar o acesso a informação no que tange a realidade do
+            ensino superior no Campus Feliz do IFRS, utilizamos a metodologia de
+            extrair e organizar dados públicos da cidade de Feliz, (no âmbito da
+            educação) de arquivos .csv disponibilizados pelo governo do estado
+            do Rio Grande do Sul.
+          </p>
+          <p className={"chart-article-paragraph "}>
+            Os arquivos foram percorridos por meio da tecnologia Node JS,
+            utilizando a linguagem Javascript e foram disponibilizados por meio
+            de uma API. Cuja página que você está acessando no momento,
+            construída por meio da tecnologia React (framework JavaScript)
+            consome utilizando Axios (biblioteca JavaScript que busca facilitar
+            a realização de requisições HTTP) e constrói os gráficos que você
+            está vendo com a biblioteca Google React Charts.
+          </p>
+        </section>
+      </div>
     </Fragment>
   );
 }

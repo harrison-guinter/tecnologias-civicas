@@ -124,6 +124,14 @@ function StudentsGraphics() {
             como Jovem Aprendiz e parcerias público-privadas para estágio a
             serem realizados durante os cursos.
           </p>
+          <p className={"chart-article-paragraph"}>
+            É importante considerar a influência da pandemia de Covid-19 no
+            sistema educacional nacional, visto que o ingresso no IFRS passou a
+            ser possível exclusivamente pelo SISU (Sistema de Seleção
+            Unificada), restringindo o acesso aos cursos superiores apenas a
+            aqueles que realizaram o ENEM (Exame Nacional do Ensino Médio) nos
+            anos pandêmicos, portanto, reduzindo o número de ingressantes.
+          </p>
         </article>
       </div>
     </Fragment>
