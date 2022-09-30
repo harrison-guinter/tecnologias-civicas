@@ -97,14 +97,34 @@ function GenreGraphics() {
         </section>
         <article className={"chart-article"}>
           <h3 className={"chart-article-title"}>
-            O que causa a maior evasão dentre o grupo masculino?
+            O que causa a maior evasão dentre o grupo masculino e como esse
+            cenário local se compara com o resto do Brasil?
           </h3>
           <p className={"chart-article-paragraph"}>
             Atualmente, as mulheres se tornaram maioria nas universidades
-            brasileiras, diferentemente do padrão demonstrado nos gráficos
-            acima, este fenômeno é explicado por diversos fatores, dentre eles,
-            a necessidade de ingressar no mercado de trabalho de forma precoce,
-            a fim de contribuir na renda familiar.
+            brasileiras, diferentemente do padrão consideravelmente igualitário
+            demonstrado nos gráficos acima, este fenômeno é explicado por
+            diversos fatores, dentre eles, a necessidade de ingressar no mercado
+            de trabalho de forma precoce, a fim de contribuir na renda familiar.
+          </p>
+          <h4 className={"chart-article-punchline"}>
+            "Mulheres brasileiras têm 34% mais probabilidade de se formar no
+            ensino superior do que seus pares do sexo masculino, mas também
+            menos chances de conseguir emprego." (Education At Glance 2019)
+          </h4>
+          <p className={"chart-article-paragraph"}>
+            Embora esta "virada" feminina no cenário do ensino superior possa
+            parecer um grande avanço, ela não desestabiliza a estrutura
+            patriarcal e machista da sociedade brasileira, apenas reflete suas
+            características em um cenário acadêmico, não necessariamente
+            domiciliar, como se imaginava ao contemplar a desigualde de gênero
+            de décadas passadas. As empresas ainda reproduzem o estigma de que
+            existem cursos para determinado gênero, a exemplo da área de
+            tecnologia, que, embora em grande expansão, o público feminino é
+            tratado com preconceito. É importante também ressaltar que demanda
+            de trabalhos manuais e/ou braçais da região condensa um número muito
+            superior de pessoas do sexo masculino, refletindo na menor adesão do
+            gênero para formação acadêmica.
           </p>
           <p className={"chart-article-paragraph"}></p>
         </article>

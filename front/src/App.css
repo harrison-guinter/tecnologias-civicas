@@ -4,6 +4,10 @@
     --secondary-gray: rgb(130, 130, 130);
 }
 
+body {
+    padding-bottom: 3em;
+}
+
 body, h3, h4 { margin: 0; }
 
 .page-topic {
